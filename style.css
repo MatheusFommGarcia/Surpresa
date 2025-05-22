@@ -1,0 +1,141 @@
+:root {
+    --main-color: #7404c5; /* Rosa vibrante */
+    --text-color: #ffffff;
+    --bg-color-01: #ff69b4; /* Rosa claro */
+    --bg-color-02: #fff0f5; /* Lavanda clara */
+    --color-00: #0000001a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-color-02);
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav a {
+    margin-left: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seções principais */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff85c1;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+}
+
+/* Layouts específicos */
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home-img img {
+    max-width: 300px;
+}
+
+.services-container,
+.reasons-container,
+.memories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.services-box,
+.reason-box,
+.memory-box {
+    background-color: var(--bg-color-02);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 0 5px var(--color-00);
+}
+
+.memory-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-layer,
+.memory-layer {
+    margin-top: 10px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.input-box input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}

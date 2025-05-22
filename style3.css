@@ -1,0 +1,75 @@
+:root {
+    --main-color: #ffffff;
+    --text-color: #ffffff;
+    --bg-color-01: #ac0095;
+    --bg-color-02: #76067b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 1rem 2rem;
+    background-color: var(--bg-color-02);
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home-content {
+    text-align: center;
+    padding: 3rem;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+footer .btn {
+    background-color: #ff6f61; /* Uma cor diferente para o botão */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .btn:hover {
+    background-color: #ff4d4d;
+    cursor: pointer;
+}
