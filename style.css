@@ -2,8 +2,8 @@
     --main-color: #7404c5; /* Rosa vibrante */
     --text-color: #ffffff;
     --bg-color-01: #ff69b4; /* Rosa claro */
-    --bg-color-02: #fff0f5; /* Lavanda clara */
-    --color-00: #0000001a;
+    --bg-color-02: #3c0946; /* Lavanda clara */
+    --color-00: #3300ff;
 }
 
 * {
@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 36rem;
     background-color: var(--bg-color-02);
 }
 
@@ -62,7 +62,7 @@ section {
 }
 
 .btn:hover {
-    background-color: #ff85c1;
+    background-color: #000000;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
 }
@@ -93,7 +93,7 @@ section {
     background-color: var(--bg-color-02);
     padding: 20px;
     border-radius: 10px;
-    color: #000;
+    color: #ffffff;
     max-width: 300px;
     text-align: center;
     box-shadow: 0 0 5px var(--color-00);
@@ -138,4 +138,9 @@ textarea {
 
 textarea {
     resize: none;
+}
+
+footer p {
+    font-size: 1.5rem; 
+    font-weight: bold;
 }

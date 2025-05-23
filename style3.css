@@ -1,8 +1,8 @@
 :root {
     --main-color: #ffffff;
     --text-color: #ffffff;
-    --bg-color-01: #ac0095;
-    --bg-color-02: #76067b;
+    --bg-color-01: #ff69b4;
+    --bg-color-02: #3c0946;
 }
 
 * {
@@ -60,7 +60,7 @@ footer {
 }
 
 footer .btn {
-    background-color: #ff6f61; /* Uma cor diferente para o botão */
+    background-color: #ff1500; /* Uma cor diferente para o botão */
     color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
