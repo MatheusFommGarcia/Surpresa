@@ -59,17 +59,41 @@ footer {
     padding: 1rem;
 }
 
-footer .btn {
-    background-color: #ff1500; /* Uma cor diferente para o botão */
-    color: #fff;
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Correção: imagem responsiva */
+footer img, .social-media img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
     text-decoration: none;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
-footer .btn:hover {
-    background-color: #ff4d4d;
+.btn:hover {
+    background-color: #000000;
+    box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
+}
+
+/* Media Query para responsividade */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 2rem;
+    }
 }

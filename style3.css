@@ -53,10 +53,23 @@ header {
     text-decoration: none;
 }
 
+/* Correção: imagem responsiva */
+footer img, .social-media img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
 footer {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 footer .btn {
@@ -72,4 +85,11 @@ footer .btn {
 footer .btn:hover {
     background-color: #ff4d4d;
     cursor: pointer;
+}
+
+/* Media Query para responsividade */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 2rem;
+    }
 }
