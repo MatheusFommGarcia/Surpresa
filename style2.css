@@ -58,3 +58,18 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
 }
+
+footer .btn {
+    background-color: #ff1500; /* Uma cor diferente para o botão */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .btn:hover {
+    background-color: #ff4d4d;
+    cursor: pointer;
+}

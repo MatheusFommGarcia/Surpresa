@@ -23,8 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 36rem;
+    padding: 1rem 2rem; /* CORRIGIDO: padding reduzido */
     background-color: var(--bg-color-02);
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
 }
 
 .logo {
@@ -74,7 +75,8 @@ section {
 }
 
 .home-img img {
-    max-width: 300px;
+    max-width: 100%; /* CORRIGIDO: para se ajustar ao container */
+    height: auto;
 }
 
 .services-container,
@@ -117,7 +119,8 @@ section {
 }
 
 .about-img img {
-    width: 300px;
+    width: 100%; /* CORRIGIDO: para responsividade */
+    max-width: 300px;
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -143,4 +146,28 @@ textarea {
 footer p {
     font-size: 1.5rem; 
     font-weight: bold;
+}
+
+/* ===== MEDIA QUERIES para responsividade ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .services-container,
+    .reasons-container,
+    .memories-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
