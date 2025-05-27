@@ -1,0 +1,95 @@
+:root {
+    --main-color: #7404c5; /* Rosa vibrante */
+    --text-color: #ffffff;
+    --bg-color-01: #ff69b4; /* Rosa claro */
+    --bg-color-02: #3c0946; /* Lavanda clara */
+    --color-00: #3300ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    background-color: var(--bg-color-02);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.logo {
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+
+.home-content h1 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.home-content img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--bg-color-02);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+}
