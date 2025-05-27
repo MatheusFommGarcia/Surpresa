@@ -1,9 +1,8 @@
 :root {
-    --main-color: #7404c5; /* Rosa vibrante */
+    --main-color: #7404c5;
     --text-color: #ffffff;
-    --bg-color-01: #ff69b4; /* Rosa claro */
-    --bg-color-02: #3c0946; /* Lavanda clara */
-    --color-00: #3300ff;
+    --bg-color-01: #ff69b4;
+    --bg-color-02: #3c0946;
 }
 
 * {
@@ -59,13 +58,24 @@ header {
     margin-bottom: 1.5rem;
 }
 
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
 .btn {
     background-color: var(--main-color);
     color: white;
-    padding: 12px 24px;
-    border-radius: 30px;
+    padding: 14px 28px;
+    border-radius: 50px;
     text-decoration: none;
+    font-size: 1.1rem;
     transition: background-color 0.3s, transform 0.3s;
+    min-width: 200px;
+    text-align: center;
 }
 
 .btn:hover {
@@ -91,5 +101,17 @@ footer p {
 
     .home-content p {
         font-size: 1.2rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .btn {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
     }
 }
