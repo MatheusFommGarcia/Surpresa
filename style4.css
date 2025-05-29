@@ -1,10 +1,10 @@
 :root {
-    --main-color: #7404c5;
+    --main-color: #f8008c;
     --text-color: #ffffff;
-    --bg-color-01: #ff69b4;
-    --bg-color-02: #3c0946;
+    --bg-color-02: #000000;
 }
 
+/* Reset e geral */
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +12,65 @@
 }
 
 body {
-    background-color: var(--bg-color-01);
+    background: linear-gradient(135deg, #f8008c, #8c0e6f, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     color: var(--text-color);
     font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
 }
 
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 💖 Corações flutuando */
+.background-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.background-hearts span {
+    position: absolute;
+    display: block;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 2rem;
+    top: -10vh;
+    animation: float 10s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* 🎯 Distribuição dos corações */
+.background-hearts span:nth-child(1) { left: 10%; animation-delay: 0s; font-size: 1.5rem; }
+.background-hearts span:nth-child(2) { left: 20%; animation-delay: 2s; font-size: 2rem; }
+.background-hearts span:nth-child(3) { left: 30%; animation-delay: 4s; font-size: 2.5rem; }
+.background-hearts span:nth-child(4) { left: 40%; animation-delay: 1s; font-size: 1.8rem; }
+.background-hearts span:nth-child(5) { left: 50%; animation-delay: 3s; font-size: 2.2rem; }
+.background-hearts span:nth-child(6) { left: 60%; animation-delay: 5s; font-size: 2rem; }
+.background-hearts span:nth-child(7) { left: 70%; animation-delay: 1.5s; font-size: 1.7rem; }
+.background-hearts span:nth-child(8) { left: 80%; animation-delay: 2.5s; font-size: 2.3rem; }
+.background-hearts span:nth-child(9) { left: 90%; animation-delay: 3.5s; font-size: 2rem; }
+.background-hearts span:nth-child(10) { left: 95%; animation-delay: 4.5s; font-size: 1.9rem; }
+
+/* Cabeçalho */
 header {
     background-color: var(--bg-color-02);
     padding: 1rem 2rem;
@@ -30,6 +84,7 @@ header {
     text-decoration: none;
 }
 
+/* Home */
 .home {
     display: flex;
     justify-content: center;
@@ -58,6 +113,7 @@ header {
     margin-bottom: 1.5rem;
 }
 
+/* Botões */
 .button-group {
     display: flex;
     gap: 1rem;
@@ -83,6 +139,7 @@ header {
     transform: scale(1.05);
 }
 
+/* Rodapé */
 footer {
     background-color: var(--bg-color-02);
     padding: 1rem;
@@ -91,6 +148,7 @@ footer {
 
 footer p {
     font-size: 1.2rem;
+    margin: 0;
 }
 
 /* Responsivo */
