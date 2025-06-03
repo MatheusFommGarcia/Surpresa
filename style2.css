@@ -18,6 +18,11 @@ body {
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+
+    /* ✅ Flexbox para empurrar o rodapé para baixo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 @keyframes gradientBG {
@@ -113,7 +118,7 @@ header {
 footer {
     background-color: var(--bg-color-02); /* Fundo preto */
     text-align: center;
-    margin-top: 2rem;
+    margin-top: auto; /* ✅ empurra o rodapé para o final */
     padding: 1rem;
 }
 
